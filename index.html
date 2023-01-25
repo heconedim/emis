@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="app.js" defer></script>
     <title>EMIS Web</title>
 </head>
 <body>
@@ -13,26 +15,31 @@
     <div class="sve">
         <div class="header">
             <div class="ikone">
-                <img src="/assets/img/bhimonksgrb.png" alt="Grbovi">
+                <img src="assets/img/bhimonksgrb.png" alt="Grbovi">
             </div>
             <div class="naslov">
                 <p>MINISTARSTVO ZA ODGOJ I OBRAZOVANJE KANTONA SARAJEVO</p>
             </div>
         </div>
-        <div class="form">
+        <form>
             <h2>Prijavite se na EMIS Web</h2>
             <label for="username">Korisničko ime*</label>
             <input type="text" id="username" name="username">
             <br>
             <label for="password">Lozinka*</label>
+            <div class="pass">
             <input type="password" id="password" name="password">
+            <span class="eye" id="toggle">
+                <i id="hide1" class="fa-solid fa-eye"></i>
+            </span>
+            </div>
             <br><br>
             <div class="buttons">
-            <input type="submit" value="PRIJAVA">
-            <input type="button" value="REGISTRACIJA RODITELJA">
-            <input type="button" value="OŠ E-DNEVNIK">
+                <button id="prijava" type="submit">PRIJAVA</button>
+                <button type="button">REGISTRACIJA RODITELJA</button>
+                <button type="button">OŠ E-DNEVNIK</button>
             </div>
-        </div>
+        </form>
     </div>
 </body>
 </html>
